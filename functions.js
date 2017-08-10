@@ -3,7 +3,6 @@ function listout(arr) {
     var output = "";
     var i;
     for(i = 0; i < arr.length; i++) {
-        //output += "           "+arr[i].name+", latitude: "+arr[i].latitude+" longitude: "+arr[i].longitude + '<br>';
         output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
                    " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
                   ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
@@ -18,7 +17,10 @@ function printUnisex(arr) {
   var i;
   for (i = 0; i < arr.length; i++) {
     if (arr[i].unisex == true) {
-      output +="           "+arr[i].name+" --- unisex"+'<br>';
+        output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
+                   " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
+                  ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
+                  arr[i].changing_table + "<br><br>";
     }
   document.getElementById("id01").innerHTML = output;
   }
@@ -30,7 +32,10 @@ function printAccessible(arr) {
   var i;
   for (i = 0; i < arr.length; i++) {
     if (arr[i].accessible == true) {
-      output +="           "+arr[i].name+"--- accessible"+'<br>';
+        output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
+                   " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
+                  ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
+                  arr[i].changing_table + "<br><br>";
     }
   document.getElementById("id01").innerHTML = output;
   }
@@ -42,7 +47,10 @@ function printChangingTable(arr) {
   var i;
   for (i = 0; i < arr.length; i++) {
     if (arr[i].changing_table == true) {
-      output +="           "+arr[i].name+ "--- table"+'<br>';
+        output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
+                   " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
+                  ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
+                  arr[i].changing_table + "<br><br>";
     }
   document.getElementById("id01").innerHTML = output;
   }
@@ -54,7 +62,10 @@ function printUnisex_Accessible(arr) {
   var i;
   for (i = 0; i < arr.length; i++) {
     if (arr[i].unisex == true && arr[i].accessible == true) {
-      output +="           "+arr[i].name+"--- unisex&accessible"+'<br>';
+        output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
+                   " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
+                  ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
+                  arr[i].changing_table + "<br><br>";
     }
   document.getElementById("id01").innerHTML = output;
   }
@@ -66,7 +77,10 @@ function printAccessible_ChangingTable(arr) {
   var i;
   for (i = 0; i < arr.length; i++) {
     if (arr[i].changing_table == true && arr[i].accessible == true) {
-      output +="           "+arr[i].name+"--- accessible&table"+'<br>';
+        output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
+                   " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
+                  ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
+                  arr[i].changing_table + "<br><br>";
     }
   document.getElementById("id01").innerHTML = output;
   }
@@ -78,7 +92,10 @@ function printUnisex_ChangingTable(arr) {
   var i;
   for (i = 0; i < arr.length; i++) {
     if (arr[i].changing_table == true && arr[i].unisex == true) {
-      output +="           "+arr[i].name+" --- unisex&table"+'<br>';
+        output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
+                   " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
+                  ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
+                  arr[i].changing_table + "<br><br>";
     }
   document.getElementById("id01").innerHTML = output;
   }
@@ -90,7 +107,10 @@ function printBathroomWithAll(arr) {
   var i;
   for (i = 0; i < arr.length; i++) {
     if (arr[i].changing_table == true && arr[i].unisex == true && arr[i].accessible == true) {
-      output +="           "+arr[i].name+" --- has all"+'<br>';
+        output += arr[i].name+"<br>----Latitude: "+arr[i].latitude+
+                   " , Longitude: "+arr[i].longitude+"<br>----Unisex: "+arr[i].unisex +
+                  ", Wheelchair-accessible: "+arr[i].accessible + ", Changing tables available: " +
+                  arr[i].changing_table + "<br><br>";
     }
   document.getElementById("id01").innerHTML = output;
   }
