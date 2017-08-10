@@ -14,5 +14,6 @@ Our website provides a map centered at your location (which shows as a blue mark
  CSS, HTML, Javascript, and JQuery
 ## Creators
  Arshia Kapil, Brenna Chen, Michelle Huang
-## Installation
-Use brennachen.github.io/Bathroom_Finder/home.html
+## How to View Website/Code
+To access the website, use brennachen.github.io/Bathroom_Finder/home.html
+To view the code, go to the gh-pages branch in this repository.
