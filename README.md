@@ -15,4 +15,4 @@ Our website provides a map centered at your location (which shows as a blue mark
 ## Creators
  Arshia Kapil, Brenna Chen, Michelle Huang
 ## Installation
-Go to brennachen.github.io/Bathroom_Finder/home.html
+Use brennachen.github.io/Bathroom_Finder/home.html
